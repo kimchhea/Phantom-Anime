@@ -47,17 +47,7 @@
   margin-bottom: 4px;
   font-size: 27px;
 }
-.collapse {
-  transition: 1s ease-in-out!important;
-  overflow: hidden;
-}
 
-.collapse.show {
-  max-height: 200px; /* Adjust based on the navbar's height */
-}
-.navbar-collapse.show {
-  max-height: 500px; /* Or a value based on the content */
-}
 .navbar-red:hover .wrapper {
   clip-path: polygon(81% 0, 100% 0, 100% 50%, 100% 100%, 65% 100%);
 }
@@ -90,72 +80,20 @@ body {
   place-items: center;
   font-family: "Poppins", sans-serif;
 }
-.slider {
-  height: auto;
-  margin: auto;
-  position: relative;
-  width: 100%;
-  overflow: hidden;
-  display: grid;
-  place-items: center;
-}
-.slide-track {
-  display: flex;
-  width: calc(400px * 13);
-  animation: scroll 20s linear infinite;
-}
-.box-img {
-  height: 340px;
-  width: 260px;
+.card-box {
+  width: 200px;
+  /* top: -40px !important; */
   border-radius: 10px;
-  overflow: hidden;
-  position: relative;
+  height: 300px;
 }
-.box-img:hover {
-  transform: scale(1.02);
-}
+
 img {
   width: 100% !important;
   height: 100% !important;
-  transition: 0.5s;
-}
-.box-img img:hover {
-  transform: scale(1.05);
-  transition: 0.5s;
-}
-.card-img img:hover {
-  transform: scale(1.05);
-  transition: 0.5s;
-}
-.text {
-  width: 250px;
-  height: auto;
-  padding-top: 5px;
-  /* color: #ffffff; */
-  font-family: "Poppins", sans-serif;
-}
-.text a {
-  font-size: 18px !important;
-  font-weight: bold;
-  text-decoration: none;
-  color: rgb(196, 195, 193);
-  font-family: "Poppins", sans-serif;
-}
-.text p {
-  font-weight: light;
-}
-@keyframes scroll {
-  0% {
-    transform: translateX(0px);
-  }
-  100% {
-    transform: translateX(calc(-340px * 6));
-  }
-}
-.slide-track:hover {
-  animation-play-state: paused;
+  position: absolute;
 }
 .card {
+  width: 100%;
   height: 350px;
 }
 .btn-discoveryq {
@@ -169,58 +107,17 @@ img {
 .btn-outline-discovery {
   background: #9f8fef;
 }
-.col-12 .card-img {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
-.Box {
-  width: 100%;
-  height: 40px;
-  z-index: 3;
-}
-.mx-6 {
-  margin-left: 61px;
-}
-.mee-0 {
-  margin-left: 85%;
-  padding: 3px 9px !important;
-  border-radius: 50%;
-}
 body {
-  overflow-x: hidden;
   color: rgb(196, 195, 193);
   background: #101111;
 }
 .card-img:hover {
   cursor: pointer;
 }
-.mtt {
-  margin-top: 90% !important;
-  font-size: 20px !important;
-}
-.card-text {
-  width: 100%;
-  /* background: #c9c9c938; */
-  /* backdrop-filter:  blur(20px); */
-  height: auto;
-}
-.card-img img {
-  width: 100%;
-  height: 100%;
-}
-.img-logo {
-  width: 200px !important;
-  border-radius: 10px;
-  border: solid #9f8fef;
-}
-.bg-dicovery {
+.bg-discovery {
   background: #9f8fef;
 }
-.dropdown-menu li a:hover {
-  color: #9f8fef !important;
-  background: none;
-}
+
 /* }////////////footer button///// */
 .pagination-outer {
   text-align: center;
@@ -369,13 +266,85 @@ body {
     display: none;
   }
 } */
-@media screen and (max-width:570px) {
-  .class-footer{
+@media screen and (max-width: 570px) {
+  .class-footer {
     display: flex;
-    justify-content:space-around;
-
+    justify-content: space-around;
   }
 }
-p strong{
-  font-size: 1rem!important;
+.getback:hover {
+  color: #9f8fef;
+}
+ul li a:hvoer {
+  cursor: pointer !important;
+}
+.box {
+  height: 30px;
+  font-weight: bold;
+}
+h1 {
+  font-family: "Poppins", sans-serif;
+}
+.box:hover {
+  border: 3px solid #ffffff !important;
+  cursor: pointer;
+}
+.border-discovery {
+  border: solid 3px #9f8fef !important;
+}
+.card-video {
+  height: auto;
+}
+@media screen and (max-width: 1318px) {
+  .box a {
+    font-size: 14px !important;
+  }
+  h1 {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 1002px) {
+  .box a {
+    font-size: 12px !important;
+  }
+  .text-episode {
+    font-size: 18px !important;
+  }
+}
+.card-episode {
+  height: auto;
+}
+.md {
+  margin-left: 1px !important;
+}
+.card-comment {
+  height: 300px; /* Set a fixed height */
+  overflow: hidden; /* Hide overflow to prevent stretching */
+}
+
+.card-comment img {
+  width: 100%; /* Keep the image responsive */
+  height: 100%; /* Fill the height of the card */
+  object-fit: contain; /* Maintain aspect ratio without cropping */
+}
+
+.card-emoji {
+  height: 100px;
+}
+.line {
+  width: 100%;
+  height: 3px;
+  background: #9f8fef;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Adjust the image within the card-comment */
+.card-comment img {
+  width: 50%; /* Keep the image responsive */
+  height: auto; /* Maintain aspect ratio */
 }
