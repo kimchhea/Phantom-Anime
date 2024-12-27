@@ -234,11 +234,11 @@ body {
   background: none;
 }
 /* }////////////footer button///// */
-.pagination-outer {
+.demo .pagination-outer {
   text-align: center;
   background: #101111 !important;
 }
-.pagination {
+.pagination-outer .pagination {
   border-radius: 10px 10px 0 0;
   border-top: 10px solid #9f8fef;
   display: inline-flex;
@@ -395,4 +395,10 @@ p strong {
   height: 6rem !important;
   object-fit: fill;
   border-radius: 5px;
+}
+
+.bg-nav{
+  background: #161719;
+  border: 2px solid #9f8fef;
+  color:rgb(255, 255, 255)!important;
 }
