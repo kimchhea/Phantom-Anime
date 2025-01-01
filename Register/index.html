@@ -31,49 +31,69 @@
         <!-- <div class="row"> -->
         <section class="col-6">
           <div class="col-11 rounded-4 px-5">
-            <h1 class="fs-2 pt-3 fw-bold">Phantom</h1>
+            <h1 class="fs-1 pt-3 fw-bold">Phantom</h1>
             <p class="pt-5 fs-5 fw-light text-justify">
               Welcome to plantom we can provide alot of anima with a hight
               quality you can become our member to get spacial benifit.
             </p>
             <p class="fs-5">Create your account</p>
-            <form action="submit" >
-              <div class="">
-                <label class="form-label px-1" for="Name">Name</label>
+            <form
+              action="../main-page/index.html"
+              method="POST"
+              class="needs-validation"
+              novalidate
+            >
+              <div class="mb-3">
+                <label class="form-label" for="name">Name</label>
                 <input
-                  class="form-control "
+                  class="form-control"
                   type="text"
+                  id="name"
                   placeholder="Username"
+                  required
                 />
+                <div class="invalid-feedback">Name is required.</div>
               </div>
-              <div>
-                <label class="form-label px-1 pt-2" for="Email">Email</label>
+              <div class="mb-3">
+                <label class="form-label" for="email">Email</label>
                 <input
                   class="form-control"
-                  type="text"
-                  placeholder="Name@gmail.com"
+                  type="email"
+                  id="email"
+                  placeholder="name@example.com"
+                  required
                 />
+                <div class="invalid-feedback">Valid email is required.</div>
               </div>
-              <div>
-                <label class="form-label px-1 pt-2" for="passwords">Passwords</label>
+              <div class="mb-3">
+                <label class="form-label" for="passwords">Password</label>
                 <input
                   class="form-control"
-                  type="text"
-                  placeholder="Passwords"
+                  type="password"
+                  id="passwords"
+                  placeholder="Password"
+                  required
                 />
+                <div class="invalid-feedback">Password is required.</div>
               </div>
-              <div>
-                <label class="form-label px-1 pt-2" for="Confirm"
-                  >Confirm-Passwords</label
+              <div class="mb-3">
+                <label class="form-label" for="confirm-pw"
+                  >Confirm Password</label
                 >
                 <input
                   class="form-control"
-                  type="text"
-                  placeholder="Passwords"
+                  type="password"
+                  id="confirm-pw"
+                  placeholder="Confirm Password"
+                  required
                 />
+                <div class="invalid-feedback">Passwords must match.</div>
               </div>
+              <button class="btn btn-solo w-100 mt-4" type="submit">
+                Create Account
+              </button>
             </form>
-            <button class="btn btn-solo w-100 mt-4" type="submit">Create accounts</button>
+
             <hr />
             <p class="fw-bold fs-5 text-center">OR</p>
             <hr />
@@ -86,12 +106,12 @@
               Facebook
             </button>
             <p class="py-3 pt-4 text-center fw-bold fs-4">
-              Go back to <a href="">sign-in</a> 
+              Go back to <a href="">sign-in</a>
             </p>
             <hr />
           </div>
         </section>
-        
+
         <section class="col-6">
           <div class="col-12 pe-4">
             <img
