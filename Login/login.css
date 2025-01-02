@@ -27,12 +27,12 @@ input:focus{
     border: 2px solid #32384e;
 }
 .btn-solo{
-    background: #32384ea8;
+    background: #32384ea8!important;
     color: white;
 }
 .btn-solo:hover{
-    background: #32384e;
-    color: white;
+    background: #32384e!important;
+    color: white!important;
 }
 .btn-solo:focus{
     background: #32384e;
