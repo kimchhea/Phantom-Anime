@@ -9,7 +9,7 @@ img {
   object-fit: cover !important;
 }
 body {
-  font-family: "Geist Mono", serif;
+  font-family: "Geist Mono", serif!important;
   font-weight: bold;
   position: relative;
   background-repeat: no-repeat;
@@ -27,18 +27,18 @@ input:focus{
     border: 2px solid #32384e;
 }
 .btn-solo{
-    background: #32384ea8;
-    color: white;
+    background: #32384ea8!important;
+    color: white!important;
 }
 .btn-solo:hover{
-    background: #32384e;
-    color: white;
+    background: #4b567e!important;
+    color: white!important;
 }
 .btn-solo:focus{
-    background: #32384e;
+    background: #32384e!important;
     color: white;
 }
 btn-solo::selected{
-    background: #32384e;
+    background: #32384e!important;
     color: white;
 }

@@ -27,15 +27,6 @@ document.addEventListener("DOMContentLoaded", function () {
     const value = input.value.trim(); // Remove any spaces around the input value
     let isValid = true;
 
-    if (input.id === "name") {
-      if (value === "") {
-        showError(input, "Name cannot be empty.");
-        isValid = false;
-      } else {
-        showSuccess(input);
-      }
-    }
-
     if (input.id === "email") {
       const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // Regex for email validation
       if (value === "") {
@@ -50,29 +41,9 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     if (input.id === "passwords") {
-      const passwordPattern =
-        /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/; // Strong password pattern
+      const value = input.value.trim();
       if (value === "") {
-        showError(input, "Password cannot be empty.");
-        isValid = false;
-      } else if (!passwordPattern.test(value)) {
-        showError(
-          input,
-          "Password must be at least 8 characters long, include uppercase and lowercase letters, a number, and a special character."
-        );
-        isValid = false;
-      } else {
-        showSuccess(input);
-      }
-    }
-
-    if (input.id === "confirm-pw") {
-      const password = document.getElementById("passwords").value;
-      if (value === "") {
-        showError(input, "Confirm Password cannot be empty.");
-        isValid = false;
-      } else if (value !== password) {
-        showError(input, "Passwords do not match.");
+        showError(input, "ID Code cannot be empty.");
         isValid = false;
       } else {
         showSuccess(input);
@@ -102,11 +73,10 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
 
-    // If all inputs are valid, redirect to the main page
+    // If all inputs are valid, show success message
     if (formIsValid) {
-      alert("Account created successfully!");
-      // Redirect to the main page
-      window.location.href = "../main-page/index.html";
+      alert("Form submitted successfully!");
+      window.location.href = "index.html";
     }
   });
 });

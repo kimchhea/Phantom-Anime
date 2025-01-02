@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap");
+
+/* Main CSS Styles */
 .navbar-nav > li > a {
   text-transform: uppercase;
   font-size: 20px;
@@ -27,7 +29,12 @@
   background-color: transparent;
   border: 1px solid white;
 }
-
+.text {
+  width: 250px;
+  height: auto;
+  padding-top: 5px;
+  font-family: "Poppins", sans-serif;
+}
 .nav-link {
   color: #fff !important;
 }
@@ -75,10 +82,16 @@ nav {
 .text-discovery {
   color: #9f8fef !important;
 }
-/* keen slider */
+
+/* Keen Slider */
 body {
   place-items: center;
   font-family: "Poppins", sans-serif;
+}
+.card-box {
+  width: 200px;
+  border-radius: 10px;
+  height: 300px;
 }
 .slider {
   height: auto;
@@ -89,11 +102,7 @@ body {
   display: grid;
   place-items: center;
 }
-.slide-track {
-  display: flex;
-  width: calc(400px * 13);
-  animation: scroll 20s linear infinite;
-}
+
 .box-img {
   height: 340px;
   width: 260px;
@@ -104,130 +113,55 @@ body {
 .box-img:hover {
   transform: scale(1.02);
 }
-img {
-  width: 100% !important;
-  height: 100% !important;
-  transition: 0.5s;
-}
 .box-img img:hover {
   transform: scale(1.05);
   transition: 0.5s;
 }
-.card-img img:hover {
-  transform: scale(1.05);
+.slide-track {
+  display: flex;
+  width: calc(400px * 13);
+  animation: scroll 20s linear infinite;
+}
+img {
+  width: 100% !important;
+  height: 100% !important;
+  position: absolute;
   transition: 0.5s;
-}
-.card-imgg img:hover {
-  transform: scale(1.05);
-  transition: 0.5s;
-}
-.text {
-  width: 250px;
-  height: auto;
-  padding-top: 5px;
-  /* color: #ffffff; */
-  font-family: "Poppins", sans-serif;
-}
-.text a {
-  font-size: 18px !important;
-  font-weight: bold;
-  text-decoration: none;
-  color: rgb(196, 195, 193);
-  font-family: "Poppins", sans-serif;
-}
-.text p {
-  font-weight: light;
-}
-@keyframes scroll {
-  0% {
-    transform: translateX(0px);
-  }
-  100% {
-    transform: translateX(calc(-340px * 6));
-  }
-}
-.slide-track:hover {
-  animation-play-state: paused;
 }
 .card {
+  width: 100%;
   height: 350px;
 }
 .btn-discoveryq {
-  border: 2px solid #9482ec;
-  color: rgb(255, 255, 255);
+  border: 2px solid #9f8fef;
+  color: rgb(196, 195, 193);
 }
 .btn-discoveryq:hover {
   background: #9f8fef;
-  color: rgb(255, 255, 255);
+  color: rgb(196, 195, 193);
 }
 .btn-outline-discovery {
   background: #9f8fef;
 }
-.col-12 .card-img {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
-.col-12 .card-imgg {
-  width: 100%;
-  height: 90%;
-  overflow: hidden;
-}
-.Box {
-  width: 100%;
-  height: 40px;
-  z-index: 3;
-}
-.mx-6 {
-  margin-left: 61px;
-}
-.mee-0 {
-  margin-left: 85%;
-  padding: 3px 9px !important;
-  border-radius: 50%;
-}
 body {
-  overflow-x: hidden;
   color: rgb(196, 195, 193);
   background: #101111;
 }
 .card-img:hover {
   cursor: pointer;
 }
-.mtt {
-  margin-top: 132% !important;
-  font-size: 15px !important;
-}
-.card-text {
-  width: 100%;
-  /* background: #c9c9c938; */
-  /* backdrop-filter:  blur(20px); */
-  height: auto;
-}
-.card-img img {
-  width: 100%;
-  height: 100%;
-}
-.img-logo {
-  width: 200px !important;
-  border-radius: 10px;
-  border: solid #9f8fef;
-}
-.bg-dicovery {
+.bg-discovery {
   background: #9f8fef;
 }
-.dropdown-menu li a:hover {
-  color: #9f8fef !important;
-  background: none;
-}
-/* }////////////footer button///// */
+
+/* Footer Button */
 .pagination-outer {
   text-align: center;
   background: #101111 !important;
 }
 .pagination {
   border-radius: 10px 10px 0 0;
-  /* border-top: 10px solid #9f8fef; */
+  border-top: 10px solid #9f8fef;
   display: inline-flex;
 }
 .pagination li {
@@ -272,8 +206,16 @@ body {
 .mt-10 {
   margin-top: 100px;
 }
-/* footer */
+.card-img img:hover {
+  transform: scale(1.05);
+  transition: 0.5s;
+}
+.card-imgg img:hover {
+  transform: scale(1.05);
+  transition: 0.5s;
+}
 
+/* Footer */
 .fh5co-bg {
   background-size: cover;
   background-position: center center;
@@ -341,7 +283,6 @@ body {
 }
 #fh5co-footer .fh5co-footer-links li a:hover {
   color: #9f8fef;
-  /* font-weight: bold; */
   animation: all 0.3s ease 0s;
 }
 #fh5co-footer .fh5co-widget {
@@ -362,17 +303,160 @@ body {
 #fh5co-footer .copyright .block {
   display: block;
 }
-/* @media screen and (max-width: 1992px) {
-  .box-button {
-    display: none;
-  }
-} */
 @media screen and (max-width: 570px) {
   .class-footer {
     display: flex;
     justify-content: space-around;
   }
 }
+.getback:hover {
+  color: #9f8fef;
+}
+ul li a:hvoer {
+  cursor: pointer !important;
+}
+.box {
+  height: 30px;
+  font-weight: bold;
+}
+h1 {
+  font-family: "Poppins", sans-serif;
+}
+.box:hover {
+  border: 3px solid #ffffff !important;
+  cursor: pointer;
+}
+.border-discovery {
+  border: solid 3px #9f8fef !important;
+}
+.card-video {
+  height: auto;
+}
+@media screen and (max-width: 1318px) {
+  .box a {
+    font-size: 14px !important;
+  }
+  h1 {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 1002px) {
+  .box a {
+    font-size: 12px !important;
+  }
+  .text-episode {
+    font-size: 18px !important;
+  }
+}
+.card-episode {
+  height: auto;
+}
+.md {
+  margin-left: 1px !important;
+}
+.card-comment {
+  height: 300px; /* Set a fixed height */
+  overflow: hidden; /* Hide overflow to prevent stretching */
+}
+
+.card-comment img {
+  width: 100%; /* Keep the image responsive */
+  height: 100%; /* Fill the height of the card */
+  object-fit: contain; /* Maintain aspect ratio without cropping */
+}
+
+.card-emoji {
+  height: 100px;
+}
+.line {
+  width: 100%;
+  height: 3px;
+  background: #9f8fef;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Adjust the image within the card-comment */
+.card-comment img {
+  width: 50%; /* Keep the image responsive */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Additional Styles from main-two.css */
+.card {
+  height: 350px;
+}
+.btn-discoveryq {
+  border: 2px solid #9482ec;
+  color: rgb(255, 255, 255);
+}
+.btn-discoveryq:hover {
+  background: #9f8fef;
+  color: rgb(255, 255, 255);
+}
+.btn-outline-discovery {
+  background: #9f8fef;
+}
+.col-12 .card-img {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.col-12 .card-imgg {
+  width: 100%;
+  height: 90%;
+  overflow: hidden;
+}
+.Box {
+  width: 100%;
+  height: 40px;
+  z-index: 3;
+}
+.mx-6 {
+  margin-left: 61px;
+}
+.mee-0 {
+  margin-left: 85%;
+  padding: 3px 9px !important;
+  border-radius: 50%;
+}
+body {
+  overflow-x: hidden;
+  color: rgb(196, 195, 193);
+  background: #101111;
+}
+.card-img:hover {
+  cursor: pointer;
+}
+.mtt {
+  margin-top: 132% !important;
+  font-size: 15px !important;
+}
+.card-text {
+  width: 100%;
+  height: auto;
+}
+.card-img img {
+  width: 100%;
+  height: 100%;
+}
+.img-logo {
+  width: 200px !important;
+  border-radius: 10px;
+  border: solid #9f8fef;
+}
+.bg-dicovery {
+  background: #9f8fef;
+}
+.dropdown-menu li a:hover {
+  color: #9f8fef !important;
+  background: none;
+}
+
 .fs-phantom {
   font-size: 5rem !important;
 }
@@ -388,7 +472,6 @@ body {
   left: 171px;
   border-top-left-radius: 12px !important;
   border-bottom-left-radius: 12px !important;
-
   border: 1px solid rgba(255, 255, 255, 0.2); /* Optional: Add a subtle border */
 }
 
@@ -402,7 +485,6 @@ body {
 .card-right {
   background: #334052cd; /* Frosted light cyan-blue */
   backdrop-filter: blur(5px);
-  /* Increase blur effect */
   position: absolute;
   right: 200px !important;
   border-top-right-radius: 12px !important;
@@ -437,14 +519,14 @@ body {
   font-weight: bold; /* Optional: Make it stand out more */
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Optional: Add some effect */
 }
-.shadow{
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3)!important;
+.shadow {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3) !important;
 }
 .btn-discovery {
   color: rgb(255, 255, 255);
-background-color: #9f8fef;
+  background-color: #9f8fef;
 }
 .btn-discovery:hover {
   color: rgb(255, 255, 255);
-background-color: #8c76fc;
+  background-color: #8c76fc;
 }

@@ -10,11 +10,14 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <link rel="icon" type="image/x-icon" href="https://i.pinimg.com/736x/6f/d4/94/6fd49408af6003bc03a65f8c7b5155d6.jpg">
-<link rel="stylesheet" href="main-page.css">
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://i.pinimg.com/736x/6f/d4/94/6fd49408af6003bc03a65f8c7b5155d6.jpg"
+    />
+    <link rel="stylesheet" href="../css/main-page.css" />
+    <link rel="stylesheet" href="../css/combined.css" />
     <link rel="stylesheet" href="http://127.0.0.1:5501/main-page/index.html" />
-    <link rel="stylesheet" href="main.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       rel="stylesheet"
@@ -25,17 +28,17 @@
       rel="stylesheet"
     />
     <nav
-      class="navbar navbar-expand-lg navbar-red navbar-dark position-sticky z-3 w-100"
-      style="top: 0px"
+      class="navbar w-100 navbar-expand-lg navbar-red navbar-dark position-sticky z-3"
+      style="top: 0"
     >
-      <div class="wrapper"></div>
       <div class="container-fluid all-show mx-5 position-sticky">
-        <a class="navbar-brand ms-3 text-discovery" href="#">Phantom</a>
+        <a class="navbar-brand ms-3" href="#">Phantom</a>
         <button
           class="navbar-toggler"
           type="button"
-          data-toggle="collapse"
-          data-target="#navbarSupportedContent"
+          id="navbarToggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent"
           aria-expanded="false"
           aria-label="Toggle navigation"
@@ -43,47 +46,72 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto mb-2 mb-lg-0 mx-auto">
+          <ul class="d-flex navbar-nav mr-auto mb-2 mb-lg-0 mx-auto">
             <li class="nav-item">
-              <a class="nav-link" href="#">Movies</a>
+              <a class="nav-link" href="index.html">Movies</a>
             </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="#">Genres</a>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="dropdownMenuLink"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Genres
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <li>
+                  <button class="dropdown-item" type="button">Action</button>
+                </li>
+                <li>
+                  <button class="dropdown-item" type="button">
+                    Another action
+                  </button>
+                </li>
+                <li>
+                  <button class="dropdown-item" type="button">
+                    Something else here
+                  </button>
+                </li>
+              </ul>
             </li>
-
             <li class="nav-item">
               <a class="nav-link" href="#">Contact</a>
             </li>
-
             <li class="nav-item">
-              <a class="nav-link" href="#">About Us</a>
+              <a class="nav-link" href="about us.html">About Us</a>
             </li>
-
             <li class="nav-item">
               <a class="nav-link" href="#"><i class="fa fa-search"></i></a>
             </li>
           </ul>
           <div class="d-flex flex-column sim me-3">
-            <span
-              ><button class="button-member btn btn-dark">
-                Become a Member
-              </button></span
-            >
+            <span>
+              <button class="button-member btn btn-dark">
+                <a
+                  href="register.html"
+                  class="btn btn-dark text-decoration-none"
+                  >Become a Member</a
+                >
+              </button>
+            </span>
           </div>
         </div>
       </div>
     </nav>
   </head>
   <body class="">
-    <div class="container-fluid  mt-3 position-relative ">
-      <a href="http://127.0.0.1:5501/main-page/index.html" class="nav-link"
+    <div class="container-fluid mt-3 position-relative">
+      <a href="index.html" class="nav-link"
         ><strong class="fs-2 getback ps-3"
           ><i class="fa-solid fa-arrow-left"> go back</i></strong
-      ></a>
-      <div class="mt-2 row ">
+        ></a
+      >
+      <div class="mt-2 row">
         <div class="col-12 rounded-0">
-          <div class="card ">
+          <div class="card">
             <img
               class="img-thumbnail"
               src="https://mochi-ten.vercel.app/_next/image?url=https%3A%2F%2Fs4.anilist.co%2Ffile%2Fanilistcdn%2Fmedia%2Fanime%2Fbanner%2F20605-RCJ7M71zLmrh.jpg&w=1200&q=75"
@@ -100,7 +128,7 @@
           </div>
         </div>
       </div>
-      <div class="row mt-4 ">
+      <div class="row mt-4">
         <div class="col-12 col-xxl-8 col-xl-8 col-sm-12 col-md-12 py-0 my-0">
           <div class="card-video border border-4 border-discovery">
             <iframe
@@ -116,7 +144,7 @@
           </div>
         </div>
         <div
-          class="col-12 col-xxl-4 col-xl-4 col-md-12 col-sm-12 d-flex box-episode "
+          class="col-12 col-xxl-4 col-xl-4 col-md-12 col-sm-12 d-flex box-episode"
         >
           <div class="card-episode bg-black border border-3 border-discovery">
             <div class="row w-100 my-2 md">
@@ -296,7 +324,7 @@
     </div>
     <div class="container-fluid mt-3">
       <div class="mt-4 mx-5">
-        <div class="col-12 col-xxl-12 col-md-12 col-sm-12 ">
+        <div class="col-12 col-xxl-12 col-md-12 col-sm-12">
           <div class="card-comment">
             <div
               class="text w-100 d-flex align-content-center justify-content-between"
@@ -349,7 +377,6 @@
             </div>
           </div>
         </div>
- 
       </div>
     </div>
   </body>
@@ -363,42 +390,58 @@
             Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia
             reprehenderit. Eos cumque dicta adipisci architecto culpa amet.
           </p>
-          <p><a class="btn btn-discoveryq" href="#">Become A Member</a></p>
+          <p>
+            <a class="btn btn-discoveryq" href="register.html"
+              >Become A Member</a
+            >
+          </p>
         </div>
         <div class="col-md-8 col-12 d-flex class-footer">
-					<div class="col-md-4 col-sm-4 col-xs-6">
-						<ul class="fh5co-footer-links a">
-					    <h3 class="text-discovery">Genres</h3>
-							<li><a href="http://127.0.0.1:5501/page-romance/index.html">Romance</a></li>
-							<li><a href="http://127.0.0.1:5501/page-action/index.html">Fighting</a></li>
-							<li><a href="http://127.0.0.1:5501/page-sport/index.html">Sport</a></li>
-							<li><a href="http://127.0.0.1:5501/main-page/index.html">School</a></li>
-						</ul>
-					</div>
+          <div class="col-md-4 col-sm-4 col-xs-6">
+            <ul class="fh5co-footer-links a">
+              <h3 class="text-discovery">Genres</h3>
+              <li><a href="romance.html">Romance</a></li>
+              <li><a href="action.html">Fighting</a></li>
+              <li><a href="sport.html">Sport</a></li>
+              <li><a href="romance.html">School</a></li>
+            </ul>
+          </div>
 
-					<div class="col-md-4 col-sm-4 col-xs-6">
-						<ul class="fh5co-footer-links ps-md-3">
-							<li><a href="http://127.0.0.1:5501/pag-magic/index.html">Magic</a></li>
-							<li><a href="http://127.0.0.1:5501/page-funny/index.html">Kids</a></li>
-							<li><a href="http://127.0.0.1:5501/main-page/index.html">Fantasy</a></li>
-							<li><a href="http://127.0.0.1:5501/main-page/index.html">Demons</a></li>
-							<li><a href="http://127.0.0.1:5501/main-page/index.html">Horror</a></li>
-						</ul>
-					</div>
+          <div class="col-md-4 col-sm-4 col-xs-6">
+            <ul class="fh5co-footer-links ps-md-3">
+              <li><a href="magic.html">Magic</a></li>
+              <li><a href="funny.html">Kids</a></li>
+              <li><a href="magic.html">Fantasy</a></li>
+              <li><a href="#">Demons</a></li>
+              <li><a href="#">Horror</a></li>
+            </ul>
+          </div>
 
-					<div class="col-md-4 col-sm-4 col-xs-6">
-						<ul class="fh5co-footer-links c">
-							<li><a href="#">More Information</a></li>
-							<li><a href="#">About us</a></li>
-							<li><a href="#">Teams</a></li>
-							<li><a href="#">Advertise</a></li>
-							<li><a href="#">API</a></li>
-						</ul>
-					</div>
-				</div>
+          <div class="col-md-4 col-sm-4 col-xs-6">
+            <ul class="fh5co-footer-links c">
+              <li><a href="#">More Information</a></li>
+              <li><a href="about us.html">About us</a></li>
+              <li><a href="#">Teams</a></li>
+              <li><a href="#">Advertise</a></li>
+              <li><a href="#">API</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- ///////////// --part-- -->
   <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const dropdownElementList = [].slice.call(
+        document.querySelectorAll(".dropdown-toggle")
+      );
+      const dropdownList = dropdownElementList.map(function (dropdownToggleEl) {
+        return new bootstrap.Dropdown(dropdownToggleEl);
+      });
+    });
+  </script>
 </html>

@@ -69,7 +69,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (isEmailValid && isPasswordValid) {
       alert("Login successful!");
-      window.location.href = "../main-page/index.html";
+      window.location.href = "index.html";
     }
   });
 });

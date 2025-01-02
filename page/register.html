@@ -3,14 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Verify-page</title>
-    <link rel="stylesheet" href="main.css" />
+    <title>Register</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     />
+    <link rel="stylesheet" href="../css/register.css" />
     <link rel="icon" type="image/x-icon" href="https://i.pinimg.com/736x/6f/d4/94/6fd49408af6003bc03a65f8c7b5155d6.jpg">
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -25,46 +25,73 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="main.css" />
   </head>
   <body class="bg-dark my-5">
     <div class="container mt-5 py-5 px-4 bg-blur rounded-4">
       <div class="row d-flex">
         <!-- <div class="row"> -->
-        <section class="col-md-12 col-sm-12 col-12 col-xxl-6 col-xl-6">
-          <div class="col-12 rounded-4 px-5">
-            <h1 class="fs-2 pt-3 fw-bold">Phantom</h1>
+        <section class="col-xxl-6 col-xl-6 col-md-12 col-sm-12">
+          <div class="col-xxl-12 col-xl-12 rounded-4 px-5">
+            <h1 class="fs-1 pt-3 fw-bold">Phantom</h1>
             <p class="pt-5 fs-5 fw-light text-justify">
               Welcome to plantom we can provide alot of anima with a hight
               quality you can become our member to get spacial benifit.
             </p>
-            <p class="fs-5">Verify your email.</p>
-            <form action="" method="post">
-              <div>
-                <label class="form-label px-1 pt-2" for="email">Email</label>
+            <p class="fs-5">Create your account</p>
+            <form
+              action="index.html"
+              method="POST"
+              class="needs-validation"
+              novalidate
+            >
+              <div class="mb-3">
+                <label class="form-label" for="name">Name</label>
                 <input
                   class="form-control"
                   type="text"
-                  id="email"
-                  placeholder="Name@gmail.com"
+                  id="name"
+                  placeholder="Username"
+                  required
                 />
-                <span class="invalid-feedback"></span>
-                <!-- Error message will be shown here -->
+                <div class="invalid-feedback">Name is required.</div>
               </div>
-              <div>
-                <label class="form-label px-1 pt-2" for="passwords"
-                  >ID Code</label
+              <div class="mb-3">
+                <label class="form-label" for="email">Email</label>
+                <input
+                  class="form-control"
+                  type="email"
+                  id="email"
+                  placeholder="name@example.com"
+                  required
+                />
+                <div class="invalid-feedback">Valid email is required.</div>
+              </div>
+              <div class="mb-3">
+                <label class="form-label" for="passwords">Password</label>
+                <input
+                  class="form-control"
+                  type="password"
+                  id="passwords"
+                  placeholder="Password"
+                  required
+                />
+                <div class="invalid-feedback">Password is required.</div>
+              </div>
+              <div class="mb-3">
+                <label class="form-label" for="confirm-pw"
+                  >Confirm Password</label
                 >
                 <input
                   class="form-control"
-                  type="text"
-                  id="passwords"
-                  placeholder="Code"
+                  type="password"
+                  id="confirm-pw"
+                  placeholder="Confirm Password"
+                  required
                 />
-                <span class="invalid-feedback"></span>
+                <div class="invalid-feedback">Passwords must match.</div>
               </div>
               <button class="btn btn-solo w-100 mt-4" type="submit">
-                Submit
+                Create Account
               </button>
             </form>
 
@@ -80,13 +107,14 @@
               Facebook
             </button>
             <p class="py-3 pt-4 text-center fw-bold fs-4">
-              Go back to <a class="" href="http://127.0.0.1:5501/Login/index.html">sign-in</a>
+              Go back to <a href="login.html">sign-in</a>
             </p>
             <hr />
           </div>
         </section>
-        <section class="col-md-12 col-sm-12 col-12 col-xxl-6 col-xl-6">
-          <div class="col-12 px-4">
+
+        <section class="col-xxl-6 col-xl-6 col-md-12 col-sm-12">
+          <div class="col-xxl-12 col-xl-12 col-md-12 col-sm-12 px-4">
             <img
               class="rounded-3"
               src="https://i.pinimg.com/736x/0b/45/22/0b452248331edd20e86f8b99282fcd63.jpg"
@@ -98,4 +126,4 @@
     </div>
   </body>
 </html>
-<script src="verify.js"></script>
+<script src="../js/Register.js"></script>

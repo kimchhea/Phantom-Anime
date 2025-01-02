@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>home-page</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -11,70 +11,427 @@
       crossorigin="anonymous"
     />
     <link rel="icon" type="image/x-icon" href="https://i.pinimg.com/736x/6f/d4/94/6fd49408af6003bc03a65f8c7b5155d6.jpg">
-    <link rel="stylesheet" href="main.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="../css/main-page.css">   
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link
       href="https://fonts.googleapis.com/css2?family=Bayon&family=Kdam+Thmor+Pro&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
-    <nav class="navbar navbar-expand-lg navbar-red navbar-dark position-sticky z-3" style="top:0px;">
-      <div class="wrapper">
-        
+    <nav class="navbar w-100 navbar-expand-lg navbar-red navbar-dark position-sticky z-3" style="top: 0;">
+      <div class="container-fluid all-show mx-5 position-sticky">
+        <a class="navbar-brand ms-3" href="index.html">Phantom</a>
+        <button class="navbar-toggler" type="button" id="navbarToggler" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="d-flex navbar-nav mr-auto mb-2 mb-lg-0 mx-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Movies</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="dropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Genres
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <li><button class="dropdown-item" type="button">Action</button></li>
+                <li><button class="dropdown-item" type="button">Another action</button></li>
+                <li><button class="dropdown-item" type="button">Something else here</button></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about us.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fa fa-search"></i></a>
+            </li>
+          </ul>
+          <div class="d-flex flex-column sim me-3">
+            <span>
+              <button class="button-member btn btn-dark">
+                <a href="register.html" class="btn btn-dark text-decoration-none">Become a Member</a>
+              </button>
+            </span>
+          </div>
+        </div>
       </div>
-<div class="container-fluid all-show mx-5  position-sticky" >
-  <a class="navbar-brand ms-3" href="#">Phantom <span><img src="" alt=""></span> </a>
-  <button class="navbar-toggler" type="button" id="navbarToggler"  data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="d-flex navbar-nav mr-auto mb-2 mb-lg-0 mx-auto">
-
-      <li class="nav-item">
-        <a class="nav-link" href="http://127.0.0.1:5501/main-page/index.html">Movies</a>
-      </li>
+    </nav>
     
-      <!-- Dropdown -->
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="dropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-          Genres
-        </a>
-        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-          <li><button class="dropdown-item" type="button">Action</button></li>
-          <li><button class="dropdown-item" type="button">Another action</button></li>
-          <li><button class="dropdown-item" type="button">Something else here</button></li>
-        </ul>
-      </li>
-    
-      <li class="nav-item">
-        <a class="nav-link" href="#">Contact</a>
-      </li>
-    
-      <li class="nav-item">
-        <a class="nav-link" href="#">About Us</a>
-      </li>
-    
-      <li class="nav-item">
-        <a class="nav-link" href="#"><i class="fa fa-search"></i></a>
-      </li>
-    </ul>
-    
-    <div class="d-flex flex-column sim me-3">
-
-      <span><button class=" button-member btn btn-dark ">
-        <a href="http://127.0.0.1:5501/Become%20member%20form/index.html" class="btn btn-dark text-decoration-none">Become a Member</a>
-      </button></span>
-      
-    </div>
-  </div>
-</div>
-</nav>
     
   </head>
   <body>
+<div class="container-fluid ">
+  <div class="row mx-5 mt-5">
+    <strong class="text-bold text-discovery fs-3 pt-5">Trending now</strong>
+    <p class="fw-light">Popular anime this season</p>
+    <div class="col-12 mt-3">
+        <div class="slider">
+          <div class="slide-track gap-4">
+           <div class="box">
+            <div class="box-img">
+             
+              <img
+               src="https://mochi-ten.vercel.app/_next/image?url=https%3A%2F%2Fs4.anilist.co%2Ffile%2Fanilistcdn%2Fmedia%2Fanime%2Fcover%2Flarge%2Fbx167144-tKDxH7M9z1Hb.png&w=640&q=75"
+                alt=""
+              />
+             
+            </div>
+            <div class="text">
+              <a class="z-3 ">Love is invisible</a>
+              <p>2024 .Ongoing</p>
+            </div>
+          </div>
+          <div class="box">
+            <div class="box-img">
+               
+              <img
+                src="https://mochi-ten.vercel.app/_next/image?url=https%3A%2F%2Fs4.anilist.co%2Ffile%2Fanilistcdn%2Fmedia%2Fanime%2Fcover%2Flarge%2Fbx21-YCDoj1EkAxFn.jpg&w=640&q=75"
+                alt=""
+              />
+      
+            </div>
+            <div class="text">
+              <a class="z-3 ">One Piece</a>
+              <p>2024 .Ongoing</p>
 
+            </div>
+          </div>
+          <div class="box">
+            <div class="box-img">
+            
+              <img
+                src="https://mochi-ten.vercel.app/_next/image?url=https%3A%2F%2Fs4.anilist.co%2Ffile%2Fanilistcdn%2Fmedia%2Fanime%2Fcover%2Flarge%2Fbx269-wc062RMqud8B.png&w=640&q=75"
+                alt=""
+              />
+            </div>
+            <div class="text">
+              <a class="z-3 ">Bleach</a>
+              <p>2024 .Ongoing</p>
+
+            </div>
+          </div>
+          <div class="box">
+            <div class="box-img">
+    
+              <img
+                src="https://mochi-ten.vercel.app/_next/image?url=https%3A%2F%2Fs4.anilist.co%2Ffile%2Fanilistcdn%2Fmedia%2Fanime%2Fcover%2Flarge%2Fbx166240-PBV7zukIHW7V.png&w=640&q=75"
+                alt=""
+              />
+            </div>
+            <div class="text">
+              <a class="z-3 ">Demonslayer</a>
+              <p>2024 .Completed<div class="Completed"></div></p>
+
+            </div>
+          </div>
+          <div class="box">
+            <div class="box-img">
+ 
+              <img
+                src="https://mochi-ten.vercel.app/_next/image?url=https%3A%2F%2Fs4.anilist.co%2Ffile%2Fanilistcdn%2Fmedia%2Fanime%2Fcover%2Flarge%2Fbx153288-tD2OmKy5CJab.jpg&w=640&q=75"
+                alt=""
+              />
+            </div>
+            <div class="text">
+              <a class="z-3 ">Kaiju No.8</a>
+              <p>2024 .Ongoing</p>
+
+            </div>
+          </div>
+          <div class="box">
+            <div class="box-img">
+        
+              <img
+                src="https://mochi-ten.vercel.app/_next/image?url=https%3A%2F%2Fs4.anilist.co%2Ffile%2Fanilistcdn%2Fmedia%2Fanime%2Fcover%2Flarge%2Fbx113415-bbBWj4pEFseh.jpg&w=640&q=75"
+                alt=""
+              />
+            </div>
+            <div class="text">
+              <a class="z-3 ">Jujutsu Kaisen</a>
+              <p>2024 .Completed</p>
+
+            </div>
+          </div>
+          <div class="box">
+            <div class="box-img">
+         
+              <img
+                src="https://mochi-ten.vercel.app/_next/image?url=https%3A%2F%2Fs4.anilist.co%2Ffile%2Fanilistcdn%2Fmedia%2Fanime%2Fcover%2Flarge%2Fbx170938-kkeDCKGSUNaV.jpg&w=640&q=75"
+                alt=""
+              />
+            </div>
+            <div class="text">
+              <a class="z-3 ">The Magical Girl....</a>
+              <p>2024 .Ongoing</p>
+
+            </div>
+          </div>
+          <div class="box">
+            <div class="box-img">
+   
+              <img
+                src="https://mochi-ten.vercel.app/_next/image?url=https%3A%2F%2Fs4.anilist.co%2Ffile%2Fanilistcdn%2Fmedia%2Fanime%2Fcover%2Flarge%2Fbx166240-PBV7zukIHW7V.png&w=640&q=75"
+                alt=""
+              />
+            </div>
+            <div class="text">
+              <a class="z-3 ">Demonslayer</a>
+              <p>2024 .Completed</p>
+
+            </div>
+          </div>
+            <div class="box">
+            <div class="box-img">
+           
+              <img
+                src="https://mochi-ten.vercel.app/_next/image?url=https%3A%2F%2Fs4.anilist.co%2Ffile%2Fanilistcdn%2Fmedia%2Fanime%2Fcover%2Flarge%2Fbx145064-5U30gu2LSOv8.jpg&w=640&q=75"
+                alt=""
+              />
+            </div>
+            <div class="text">
+              <a class="z-3 ">Jujutsu Kaisen</a>
+              <p>2024 .Completed</p>
+
+            </div>
+            </div>
+            <div class="box">
+            <div class="box-img">
+              <img
+              
+                src="https://mochi-ten.vercel.app/_next/image?url=https%3A%2F%2Fs4.anilist.co%2Ffile%2Fanilistcdn%2Fmedia%2Fanime%2Fcover%2Flarge%2Fbx173584-nyZElmr8218W.jpg&w=640&q=75"
+                alt=""
+              />
+            </div>
+            <div class="text">
+              <a class="z-3 ">The Strongest Magician......</a>
+              <p>2024 .Ongoing</p>
+
+            </div>
+            </div>
+            <div class="box">
+            <div class="box-img">
+              <img
+                src="https://mochi-ten.vercel.app/_next/image?url=https%3A%2F%2Fs4.anilist.co%2Ffile%2Fanilistcdn%2Fmedia%2Fanime%2Fcover%2Flarge%2Fbx139095-xXcToL6L4vuv.jpg&w=640&q=75"
+                alt=""
+              />
+            </div>
+            <div class="text">
+              <a class="z-3 ">Love is invisible</a>
+              <p>2024 .Ongoing</p>
+
+            </div>
+            </div>
+            <div class="box">
+            <div class="box-img">
+              <img
+                src="https://mochi-ten.vercel.app/_next/image?url=https%3A%2F%2Fs4.anilist.co%2Ffile%2Fanilistcdn%2Fmedia%2Fanime%2Fcover%2Flarge%2Fbx162896-hSMTVceb50GY.jpg&w=640&q=75"
+                alt=""
+              />
+            </div>
+            <div class="text">
+              <a class="z-3 ">The Elusive Samurai</a>
+              <p>2024 .Ongoing</p>
+
+              <p></p>
+            </div>
+            </div>
+            <div class="box">
+            <div class="box-img">
+              <img
+                src="https://mochi-ten.vercel.app/_next/image?url=https%3A%2F%2Fs4.anilist.co%2Ffile%2Fanilistcdn%2Fmedia%2Fanime%2Fcover%2Flarge%2Fbx156822-Jzo2ITWgm4kM.jpg&w=640&q=75"
+                alt=""
+              />
+            </div>
+            <div class="text">
+              <a class="z-3 ">That Time I Got Reincarnated</a>
+              <p>2024 .Ongoing</p>
+
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ///////////////////////////////////////box-1 -->
+  <div class="container-fluid">
+    <div class="row mx-5 ">
+      <strong class="fw-bold fs-3 text-discovery">Popular Anime(All Time)</strong>
+      <div class="col-12 col-xxl-2 col-xl-3 col-lg-4 col-sm-6 col-md-4 position-relative">
+      ​​​​​​​  ​​     <div class="card bg-dark position-relative">
+        <a href="video.html">
+        <div class="card-img position-absolute">
+          <img
+                src="https://mochi-ten.vercel.app/_next/image?url=https%3A%2F%2Fs4.anilist.co%2Ffile%2Fanilistcdn%2Fmedia%2Fanime%2Fcover%2Flarge%2Fbx11061-NpIIobuQNbJW.png&w=640&q=75"
+                alt=""
+              />
+        </div>
+        <div class="card-logo position-absolute ">
+      <div class="Box">
+     <p class="bg-dicovery px-3 py-1  fw-bold mt-2 ms-2 rounded-start-1">TV</p>
+      </div>
+        </div>
+        <div class="card-name position-absolute mx-6 mt-2 px-3 py-1 rounded-end-1 bg-black text-light">
+          <i class="fa-solid fa-tv "> 14</i>
+          
+        </div>
+       <div class="card-icon position-absolute mee-0  bg-dark mt-2 text-center ">
+       <a href="http://127.0.0.1:5501/tezt-components/indec.html"><i class="fa-solid fa-plus pt-1 text-light"></i></a> 
+       </div>
+       <div class="card-text position-absolute px-3 w-100 mtt  text-light">
+        <p><strong class="w-100">Hunter X Hunter</strong></p>
+        <p>2024 .Ongoing</p>
+       </div>
+      </a>
+      </div>
+    </div> 
+    <!-- //////////////////////// -->
+      <div class="col-12 col-xxl-2 col-xl-3 col-lg-4 col-sm-6 col-md-4 position-relative">
+      ​​​​​​​  ​​     <div class="card bg-dark">
+        <a href="video.html"></a>
+
+        <div class="card-img ">
+          <img
+          src="https://mochi-ten.vercel.app/_next/image?url=https%3A%2F%2Fs4.anilist.co%2Ffile%2Fanilistcdn%2Fmedia%2Fanime%2Fcover%2Flarge%2Fbx162896-hSMTVceb50GY.jpg&w=640&q=75"
+          alt=""
+        />
+        </div>
+        <div class="card-logo position-absolute ">
+          <div class="Box">
+         <p class="bg-dicovery px-3 py-1  fw-bold mt-2 ms-2 rounded-start-1">TV</p>
+          </div>
+            </div>
+            <div class="card-name position-absolute mx-6 mt-2 px-3 py-1 rounded-end-1 bg-black text-light">
+              <i class="fa-solid fa-tv"> 14</i>
+              
+            </div>
+           <div class="card-icon position-absolute mee-0  bg-dark mt-2 text-center ">
+           <a href="http://127.0.0.1:5501/tezt-components/indec.html"><i class="fa-solid fa-plus pt-1 text-light"></i></a> 
+           </div>
+           <div class="card-text position-absolute px-3 w-100 mtt  text-light">
+            <p><strong class="w-100">The Elusive Sumerai</strong></p>
+            <p>2024 .Ongoing</p>
+           </div>
+      </div>
+
+      </div> 
+      <!-- ///////////////// -->
+      <div class="col-12 col-xxl-2 col-xl-3 col-lg-4 col-sm-6 col-md-4 position-relative">
+      ​​​​​​​  ​​     <div class="card bg-dark">
+        <a href="http://127.0.0.1:5501/tezt-components/index.html"></a>
+        
+        <div class="card-img ">
+          <img
+          src="https://mochi-ten.vercel.app/_next/image?url=https%3A%2F%2Fs4.anilist.co%2Ffile%2Fanilistcdn%2Fmedia%2Fanime%2Fcover%2Flarge%2Fbx145064-5U30gu2LSOv8.jpg&w=640&q=75"
+          alt=""
+        />
+        </div>
+        <div class="card-logo position-absolute ">
+          <div class="Box">
+         <p class="bg-dicovery px-3 py-1 rounded-start-1 fw-bold mt-2 ms-2">TV</p>
+          </div>
+            </div>
+            <div class="card-name position-absolute mx-6 mt-2 px-3 py-1 rounded-end-1 bg-black text-light">
+              <i class="fa-solid fa-tv"> 14</i>
+              
+            </div>
+           <div class="card-icon position-absolute mee-0  bg-dark mt-2 text-center ">
+           <a href="http://127.0.0.1:5501/tezt-components/indec.html"><i class="fa-solid fa-plus pt-1 text-light"></i></a> 
+           </div>
+           <div class="card-text position-absolute px-3 w-100 mtt  text-light">
+            <p><strong class="w-100">Jutjusu Kaisen</strong></p>
+            <p>2024 .Ongoing</p>
+           </div>
+      </div>
+                       
+      </div> 
+      <!-- /////////////////////////// -->
+      <div class="col-12 col-xxl-2 col-xl-3 col-lg-4 col-sm-6 col-md-4 position-relative">
+      ​​​​​​​  ​​     <div class="card bg-dark">
+        <a href="http://127.0.0.1:5501/tezt-components/index.html"></a>
+        <div class="card-img ">  <img
+          src="https://mochi-ten.vercel.app/_next/image?url=https%3A%2F%2Fs4.anilist.co%2Ffile%2Fanilistcdn%2Fmedia%2Fanime%2Fcover%2Flarge%2Fbx170938-kkeDCKGSUNaV.jpg&w=640&q=75"
+          alt=""
+        /></div>
+        <div class="card-logo position-absolute ">
+          <div class="Box">
+         <p class="bg-dicovery px-3 py-1 rounded-start-1 fw-bold mt-2 ms-2">TV</p>
+          </div>
+            </div>
+            <div class="card-name position-absolute mx-6 mt-2 px-3 py-1 rounded-end-1 bg-black text-light">
+              <i class="fa-solid fa-tv"> 16</i>
+              
+            </div>
+           <div class="card-icon position-absolute mee-0  bg-dark mt-2 text-center ">
+           <a href="http://127.0.0.1:5501/tezt-components/indec.html"><i class="fa-solid fa-plus pt-1 text-light"></i></a> 
+           </div>
+           <div class="card-text position-absolute px-3 w-100 mtt  text-light">
+            <p><strong class="w-100">The Magical Girl..</strong></p>
+            <p>2024 .Ongoing</p>
+           </div>
+      </div>
+
+      </div>   
+      <!-- /////// -->
+      <div class="col-12 col-xxl-2 col-xl-3 col-lg-4 col-sm-6 col-md-4 position-relative">
+        ​​​​​​​  ​​     <div class="card bg-dark">
+          <a href="http://127.0.0.1:5501/tezt-components/index.html"></a>
+          <div class="card-img ">
+            <img
+            src="https://mochi-ten.vercel.app/_next/image?url=https%3A%2F%2Fs4.anilist.co%2Ffile%2Fanilistcdn%2Fmedia%2Fanime%2Fcover%2Flarge%2Fbx156822-Jzo2ITWgm4kM.jpg&w=640&q=75"
+            alt=""
+          />
+          </div>
+          <div class="card-logo position-absolute ">
+            <div class="Box">
+           <p class="bg-dicovery px-3 py-1 rounded-start-1 fw-bold mt-2 ms-2">TV</p>
+            </div>
+              </div>
+              <div class="card-name position-absolute mx-6 mt-2 px-3 py-1 rounded-end-1 bg-black text-light">
+                <i class="fa-solid fa-tv"> 16</i>
+                
+              </div>
+             <div class="card-icon position-absolute mee-0  bg-dark mt-2 text-center ">
+             <a href="http://127.0.0.1:5501/tezt-components/indec.html"><i class="fa-solid fa-plus pt-1 text-light"></i></a> 
+             </div>
+             <div class="card-text position-absolute px-3 w-100 mtt  text-light">
+              <p><strong class="w-100">That time i get reincar..</strong></p>
+              <p>2024 .Ongoing</p>
+             </div>
+        </div>
+  
+        </div> 
+        <!-- //////////////////// -->
+        <div class="col-12 col-xxl-2 col-xl-3 col-lg-4 col-sm-6 col-md-4 position-relative">
+          ​​​​​​​  ​​     <div class="card bg-dark">
+            <a href="http://127.0.0.1:5501/tezt-components/index.html"></a>
+            <div class="card-img ">
+              <img
+              src="https://mochi-ten.vercel.app/_next/image?url=https%3A%2F%2Fs4.anilist.co%2Ffile%2Fanilistcdn%2Fmedia%2Fanime%2Fcover%2Flarge%2Fbx166240-PBV7zukIHW7V.png&w=640&q=75"
+              alt=""
+            />
+            </div>
+            <div class="card-logo position-absolute ">
+              <div class="Box">
+             <p class="bg-dicovery px-3 py-1 rounded-start-1 fw-bold mt-2 ms-2">TV</p>
+              </div>
+                </div>
+                <div class="card-name position-absolute mx-6 mt-2 px-3 py-1 rounded-end-1 bg-black text-light">
+                  <i class="fa-solid fa-tv"> 18</i>
+                  
+                </div>
+               <div class="card-icon position-absolute mee-0  bg-dark mt-2 text-center ">
+               <a href="http://127.0.0.1:5501/tezt-components/indec.html"><i class="fa-solid fa-plus pt-1 text-light"></i></a> 
+               </div>
+               <div class="card-text position-absolute  px-3  w-100 mtt  text-light">
+                <p><strong class="w-100">Demon Slayer</strong></p>
+                <p class="">2024 .Ongoing</p>
+               </div>
+          </div>
     
           </div> 
      
@@ -905,39 +1262,39 @@
                       </div>
                       </div>
                       <!-- ------section time and ranking--- -->
-                      <section class="row mt-5">
-                        <div class="col-8">
+                      <section class="row mt-5 card-extra">
+                        <div class="col-xxl-8 col-md-12">
                           <h3 class="py-3">
                             Estimate Schedule
                             <!-- <span class="text-end">GMT+7:00 /12/</span> -->
                           </h3>
                           <div class="row gap-4 fs-5 ms-1 mt-2">
-                            <div class="col-1 btn-discovery pt-2 rounded px-2 py-0">
+                            <div class="col-xxl-1 col-xl-1 col-sm-2 btn-discovery pt-2 rounded px-2 py-0">
                               <p class="text-center">Sun</p>
                               <p class="text-center">Dec-28</p>
 
                             </div>
-                            <div class="col-1 btn-discovery pt-2 rounded px-2">
+                            <div class="col-xxl-1 col-xl-1 col-sm-2 btn-discovery pt-2 rounded px-2">
                               <p class="text-center">Mon</p>
                               <p class="text-center">Dec-22</p>
                             </div>
-                            <div class="col-1 btn-discovery pt-2 rounded px-2">
+                            <div class="col-xxl-1 col-xl-1 col-sm-2 btn-discovery pt-2 rounded px-2">
                               <p class="text-center">Tus</p>
                               <p class="text-center">Dec-23</p>
                             </div>
-                            <div class="col-1 btn-discovery pt-2 rounded px-2">
+                            <div class="col-xxl-1 col-xl-1 col-sm-2 btn-discovery pt-2 rounded px-2">
                               <p class="text-center">Wed</p>
                               <p class="text-center">Dec-24</p>
                             </div>
-                            <div class="col-1 btn-discovery pt-2 rounded px-2">
+                            <div class="col-xxl-1 col-xl-1 col-sm-2 btn-discovery pt-2 rounded px-2">
                               <p class="text-center">Thu</p>
                               <p class="text-center">Dec-25</p>
                             </div>
-                            <div class="col-1 btn-discovery pt-2 rounded px-2">
+                            <div class="col-xxl-1 col-xl-1 col-sm-2 btn-discovery pt-2 rounded px-2">
                               <p class="text-center">Fri</p>
                               <p class="text-center">Dec-26</p>
                             </div>
-                            <div class="col-1 btn-discovery pt-2 rounded px-2">
+                            <div class="col-xxl-1 col-xl-1  col-sm-2 btn-discovery pt-2 rounded px-2">
                               <p class="text-center">Sat</p>
                               <p class="text-center">Dec-27</p>
                             </div>
@@ -980,17 +1337,17 @@
                              <hr class=" text-light ms-2 me-5 my-2 col-10">
                              <div class=" title d-flex mt-2 fs-4  justify-content-between my-1">
                               <p><span class="text-discovery">12:43</span> Without You  </p>
-                              <button class="btn btn-discoveryq">Episode-32</button>
+                              <button class="btn btn-discoveryq">Episode-12</button>
                              </div>
                              <hr class=" text-light ms-2 me-5 my-2 col-10">
                              <div class=" title d-flex mt-2 fs-4  justify-content-between my-1">
                               <p><span class="text-discovery">12:03</span> Dragon ball  </p>
-                              <button class="btn btn-discoveryq">Episode-45</button>
+                              <button class="btn btn-discoveryq">Episode-19</button>
                              </div>
                              <hr class=" text-light ms-2 me-5 my-2 col-10">
                              <div class=" title d-flex mt-2 fs-4  justify-content-between my-1">
                               <p><span class="text-discovery">12:03</span> One Piece </p>
-                              <button class="btn btn-discoveryq">Episode-65</button>
+                              <button class="btn btn-discoveryq">Episode-15</button>
                              </div>
                              <hr class=" text-light ms-2 me-5 my-2 col-10">
                              <div class=" title d-flex mt-2 fs-4  justify-content-between my-1">
@@ -1012,11 +1369,11 @@
                           </div>
                           
                         </div>
-                        <div class="col-4 mt-4 ">
-                          <div class="row ">
-                            <div class="ranking-title d-flex justify-content-between bg-nav rounded-2">
+                        <div class="col-xxl-4 mt-4 col-md-12 ">
+                          <div class="row mt-4">
+                            <div class="ranking-title d-flex justify-content-between bg-nav rounded-2 col-12 ">
                              <p class="fs-2 pt-2  ">Top-10</p>
-                              <nav aria-label="Page navigation bg-nav">
+                              <nav aria-label="Page navigation bg-nav ">
                                 <ul class="pagination pt-3">
                                   <li class="page-item "><a class="page-link w-100 px-2 " href="#">Today</a></li>
                                   <li class="page-item"><a class="page-link w-100  px-2 " href="#">Week</a></li>
@@ -1024,7 +1381,7 @@
                                 </ul>
                               </nav>
                             </div>
-                            <div class="ranking-movie mt-3 bg-nav rounded">
+                            <div class="ranking-movie mt-3 bg-nav rounded ">
                              <div class="box-movie  d-flex gap-3  thu-3">
                               <p class="fs-1 text-decoration-underline py-2"style="text-underline-offset: 1rem;">01</p>
                               <div class="img-movie">
@@ -1203,34 +1560,34 @@
 					<p>Our website offers a wide range of anime that you can watch for free with high quality. You can also support us by becoming a member.
 
           </p>
-					<p><a class="btn btn-discoveryq " href="http://127.0.0.1:5501/Become%20member%20form/index.html">Become A Member</a></p>
+					<p><a class="btn btn-discoveryq " href="register.html">Become A Member</a></p>
 				</div>
 				<div class="col-md-8 col-12 d-flex class-footer">
 					<div class="col-md-4 col-sm-4 col-xs-6">
 						<ul class="fh5co-footer-links a">
 					    <h3 class="text-discovery">Genres</h3>
-							<li><a href="http://127.0.0.1:5501/page-romance/index.html">Romance</a></li>
-							<li><a href="http://127.0.0.1:5501/page-action/index.html">Fighting</a></li>
-							<li><a href="http://127.0.0.1:5501/page-sport/index.html">Sport</a></li>
-							<li><a href="http://127.0.0.1:5501/main-page/index.html">School</a></li>
+							<li><a href="romance.html">Romance</a></li>
+							<li><a href="action.html">Fighting</a></li>
+							<li><a href="sport.html">Sport</a></li>
+							<li><a href="romance.html">School</a></li>
 						</ul>
 					</div>
 
 
 					<div class="col-md-4 col-sm-4 col-xs-6">
 						<ul class="fh5co-footer-links ps-md-3">
-							<li><a href="http://127.0.0.1:5501/pag-magic/index.html">Magic</a></li>
-							<li><a href="http://127.0.0.1:5501/page-funny/index.html">Kids</a></li>
-							<li><a href="#">Fantasy</a></li>
-							<li><a href="#">Demons</a></li>
-							<li><a href="#">Horror</a></li>
+							<li><a href="magic.html">Magic</a></li>
+							<li><a href="funny.html">Kids</a></li>
+							<li><a href="magic.html">Fantasy</a></li>
+							<li><a href="demon.html">Demons</a></li>
+							<li><a href="horror.html">Horror</a></li>
 						</ul>
 					</div>
 
 					<div class="col-md-4 col-sm-4 col-xs-6">
 						<ul class="fh5co-footer-links c">
 							<li><a href="#">More Information</a></li>
-							<li><a href="#">About us</a></li>
+							<li><a href="about us.html">About us</a></li>
 							<li><a href="#">Teams</a></li>
 							<li><a href="#">Advertise</a></li>
 							<li><a href="#">API</a></li>
@@ -1244,15 +1601,13 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <!-- <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script> -->
   <script>
-    // Select the navbar toggler button and the collapsible navbar
-const navbarToggler = document.getElementById("navbarToggler");
-const navbarContent = document.getElementById("navbarSupportedContent");
-
-// Add click event listener to the toggler button
-navbarToggler.addEventListener("click", () => {
-  // Toggle the "show" class to collapse or expand the navbar
-  navbarContent.classList.toggle("show");
-});
+    document.addEventListener("DOMContentLoaded", function () {
+      const dropdownElementList = [].slice.call(document.querySelectorAll('.dropdown-toggle'));
+      const dropdownList = dropdownElementList.map(function (dropdownToggleEl) {
+        return new bootstrap.Dropdown(dropdownToggleEl);
+      });
+    });
+    
 
   </script>
 </html>
